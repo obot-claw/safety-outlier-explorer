@@ -77,3 +77,17 @@ The chart can be configured to facilitate non-standard data formats and to alter
 - [API](https://github.com/RhoInc/safety-outlier-explorer/wiki/API)
 - [Technical Documentations](https://github.com/RhoInc/safety-outlier-explorer/wiki/Technical-Documentation) 
 - [Data Guidelines](https://github.com/RhoInc/safety-outlier-explorer/wiki/Data-Guidelines)
+
+## P004 nextgen functional requirements status
+
+This section tracks the nextgen Chart.js spike against the legacy wiki requirements. The current spike is intentionally partial; unmet items become migration backlog before any replacement release.
+
+| Requirement area | Legacy requirement summary | Spike status |
+|---|---|---|
+| Measure filter | Select the safety measure/lab variable displayed. | Implemented in spike. |
+| Configured filters | Filter by pre-selected characteristics. | Partial: treatment-group filter implemented. |
+| Participant count | Display participants shown and percentage of total. | Implemented in spike. |
+| X-axis control | Toggle study day, visit, or visit number. | Partial: VISITN/VISIT/DY selector implemented when data are present. |
+| Longitudinal traces | Show participant-level values over time. | Partial: limited participant trace rendering implemented. |
+| Outlier interactions | Identify outliers, hover/click points, and show detailed records. | Partial: listing path implemented; outlier classification not implemented. |
+| Regression coverage | Validate measure/filter/x-axis changes, participant count, point interactions, and listing. | Not started; requires automated browser tests. |
